@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Survey Form</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>  
+  <p id="description">Please fill the form with required information</p>
+  <form id="survey-form">
+   First
+     <label id="name-label">Name<input id="name" type="text" placeholder="First name" required></label><br>
+     Middle <label id="name-label">Name<input id="name" type="text" placeholder="Middle name" required></label><br>
+     Last <label id="name-label">Name<input id="name"type="text" placeholder="Last name" required></label><br>
+     <label id="email-label">Email ID<input id="email" type="email" placeholder="Email" required></label><br>
+    <label id="number-label">Age <input id="number" type="number" min="10" max="120" placeholder="No."></label><br> 
+    <label>Which city do you live in?<select id="dropdown" name="dropdown">
+  <option value="">(select one)</option>
+<option value="1">Ahmedabad</option> <option value="2">Gandhinagar</option>
+<option value="3">Surat</option>
+<option value="4">Vadodra</option>
+<option value="5">Junagadh</option>
+<option value="6">Aanad</option>
+<option value="7">Bhuj</option>
+<option value="8">Dwarka</option>
+<option value="9">Porbandar</option>
+<option value="10">Others</option>
+ </select></label>
+ <fieldset>
+<legend>What is your Gender</legend>
+<label><input id="female" type="radio" name="gender" value="female" checked> Female</label><br>
+ <label><input id="male" type="radio" name="gender" value="male"> Male</label><br>
+ <label><input id="other" type="radio" name="gender" value="other"> Other</label>
+  </fieldset>
+  <label>What are your Hobbies?<br>
+  <input type="checkbox" value="dancing" id="dancing"> Dancing<br>
+  <input type="checkbox" value="singing" id="singing"> Singing<br>
+  <input type="checkbox" value="trekking" id="trekking"> Trekking<br>
+  <input type="checkbox" value="reading" id="reading"> Reading<br>
+  <input type="checkbox" value="writing" id="writing"> Writing<br>
+  </label>
+  <label for="address"> Address:
+    <textarea id="address" rows="3" cols="30" placeholder="Type Address here"></textarea>
+  </label>
+  <label for="address"> Provide your bio:
+    <textarea id="bio" rows="5" cols="40" placeholder="Type the bio here"></textarea>
+  </label>
+   <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+</html>
